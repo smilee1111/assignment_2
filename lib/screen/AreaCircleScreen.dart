@@ -7,9 +7,10 @@ class Areacirclescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Area of Circle"),
+        title: Text("Area of Circle",
+        style: TextStyle(fontSize: 20),),
         backgroundColor: Colors.yellow,
-        titleSpacing: 130,
+        titleSpacing: 100,
       ),
       body: Padding(
         padding: EdgeInsets.all(50),
@@ -25,10 +26,16 @@ class Areacirclescreen extends StatelessWidget {
             SizedBox(height: 10,),
             SizedBox(
               width: 190,
-              child: ElevatedButton(onPressed: () {}, child: Text("Calulate Area.",
+              child: ElevatedButton(onPressed: () {},
+               style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromRGBO(248, 234, 109, 1)
+            ), child: Text("Calulate Area",
               style: TextStyle(fontSize: 20))),
             ),
-            SizedBox(height: 10)
+             SizedBox(height: 10),
+            Text(
+              "Result is: ",style: TextStyle(fontSize: 20),
+            )
         
           ],
         ),

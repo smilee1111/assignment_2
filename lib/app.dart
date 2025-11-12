@@ -1,3 +1,4 @@
+import 'package:assignment_2/screen/Airthmetic.dart';
 import 'package:assignment_2/screen/AirthmeticScreen.dart';
 import 'package:assignment_2/screen/AreaCircleScreen.dart';
 import 'package:assignment_2/screen/ArmstrongScreen.dart';

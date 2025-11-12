@@ -2,16 +2,17 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
-class AirthmeticScreen extends StatelessWidget {
-  const AirthmeticScreen({super.key});
+class ArithmeticScreen extends StatelessWidget {
+  const ArithmeticScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Airthmetic Screen"),
-        backgroundColor: Colors.blue,
-        titleSpacing:110,
+        title: Text("Arithmetic Screen",
+        style: TextStyle(fontSize: 20),),
+        backgroundColor: const Color.fromARGB(255, 207, 144, 231),
+        titleSpacing:90,
       ),
       body:Padding(padding: 
       EdgeInsets.all(8),
@@ -36,7 +37,10 @@ class AirthmeticScreen extends StatelessWidget {
             //button 
             SizedBox(
               width: 150,
-              child: ElevatedButton(onPressed: () {}, child: Text(
+              child: ElevatedButton(onPressed: () {}, 
+               style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromRGBO(213, 158, 224, 1)
+            ),child: Text(
                 "SUM", style: TextStyle(
                   fontSize: 20),
                 ),

@@ -7,9 +7,10 @@ class Armstrongscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Armstrong Number"),
+        title: Text("Armstrong Number",
+        style: TextStyle(fontSize: 20),),
         backgroundColor: Colors.green,
-        titleSpacing: 110,
+        titleSpacing: 89,
       ),
       body: Padding(
         padding:EdgeInsets.all(30),
@@ -25,9 +26,16 @@ class Armstrongscreen extends StatelessWidget {
             SizedBox(height: 15),
           SizedBox(
             width: 150,
-            child: ElevatedButton(onPressed: () {}, child: Text("Check",
+            child: ElevatedButton(onPressed: () {},
+             style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 102, 218, 106)
+            ), child: Text("Check",
             style: TextStyle(fontSize: 20))),
-          )
+          ),
+            SizedBox(height: 10),
+            Text(
+              "Result is: ",style: TextStyle(fontSize: 20),
+            )
           ],
         ),
       )
