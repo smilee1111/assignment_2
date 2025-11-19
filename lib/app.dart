@@ -3,6 +3,8 @@ import 'package:assignment_2/screen/AirthmeticScreen.dart';
 import 'package:assignment_2/screen/AreaCircleScreen.dart';
 import 'package:assignment_2/screen/ArmstrongScreen.dart';
 import 'package:assignment_2/screen/DashboardScreen.dart';
+import 'package:assignment_2/screen/FlutterLayoutScreen.dart';
+import 'package:assignment_2/screen/RichTextScreen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -11,7 +13,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Dashboardscreen()
+      home: Flutterlayoutscreen()
     );
   }
 }

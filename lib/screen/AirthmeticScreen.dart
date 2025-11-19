@@ -36,7 +36,17 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                 decoration: InputDecoration(
                   labelText: "Enter first no:",
                   hintText: "e.g 2",
-                  border:  OutlineInputBorder(),
+                  border:  OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    borderSide: BorderSide(color: Colors.purple)
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    borderSide: BorderSide(color: Colors.red),
+                  )
                 ), validator: (value){
                   if(value==null || value.isEmpty){
                     return "Please enter first number.";
@@ -51,7 +61,17 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
                 decoration: InputDecoration(
                   labelText: "Enter second no:",
                   hintText: "e.g",
-                  border:  OutlineInputBorder(),
+                 border:  OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    borderSide: BorderSide(color: Colors.purple)
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    borderSide: BorderSide(color: Colors.red),
+                  )
                 ),
                 validator: (value){
                   if(value==null || value.isEmpty){
