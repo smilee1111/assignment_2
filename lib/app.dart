@@ -1,7 +1,9 @@
 import 'package:assignment_2/screen/Airthmetic.dart';
 import 'package:assignment_2/screen/AirthmeticScreen.dart';
 import 'package:assignment_2/screen/AreaCircleScreen.dart';
+import 'package:assignment_2/screen/ArithmeticScreen2.dart';
 import 'package:assignment_2/screen/ArmstrongScreen.dart';
+import 'package:assignment_2/screen/ColumnScreen.dart';
 import 'package:assignment_2/screen/DashboardScreen.dart';
 import 'package:assignment_2/screen/FlutterLayoutScreen.dart';
 import 'package:assignment_2/screen/RichTextScreen.dart';
@@ -13,7 +15,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Flutterlayoutscreen()
+      home: ArithmeticScreen2()
     );
   }
 }
